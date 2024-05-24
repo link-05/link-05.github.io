@@ -1,0 +1,12 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0 auto;
+    color: #0bb9d0; /* Changed the color to "ocean" */
+}
