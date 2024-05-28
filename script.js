@@ -19,7 +19,7 @@
 //Figure out later does not work.
 
 function getFolderLinks() {
-  const url = "https://raw.githubusercontent.com/link-05/APCSA_MP3/main/frq-solutions";
+  const url = "https://github.com/link-05/APCSA_MP3/tree/main/frq-solutions";
   const apiUrl = `https://api.github.com/repos/link-05/APCSA_MP3/contents/frq-solutions`;
   fetch(apiUrl)
     .then(response => response.json())
