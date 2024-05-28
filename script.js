@@ -38,10 +38,13 @@ function createMiniBox(title, url) {
   miniBox.className = "mini-box";
 
   const link = document.createElement("a");
+
   link.href = url;
   link.textContent = title;
+  link.target = "_blank"; // Add this attribute will force the window to open
 
   miniBox.appendChild(link);
+  
   document.body.appendChild(miniBox);
 }
 
