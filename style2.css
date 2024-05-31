@@ -10,29 +10,44 @@ h1 {
     /* Add some spacing below the heading */
 }
 
-.mini-box {
-    width: 250px;
-    /* Set mini-box width */
+.mini-boxS { 
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
     border: 1px solid #ccc;
-    /* Add subtle border */
-    margin-bottom: 20px;
-    /* Provide spacing between boxes */
-    background-color: #c0c0c0;
-    /*Silver white background */
-    background-image: linear-gradient(to bottom, #f0f0f0, #c0c0c0);
-    /* Added gradient */
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+    float: right; /* This makes the mini-boxes float to the right */
 }
 
-.mini-box a {
-    display: block;
-    /* Make the link take up the full width of its container */
-    margin-top: 10px;
-    /* Add some spacing between the title and the link */
-    text-decoration: none;
-    /* Remove the default underline from the link */
-    color: #0bb9d0;
-    /* Set the link color to match the title color */
+.mini-box {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  width: 200px;
+    float: left;
 }
+
+.mini-boxS a { /* Target the 'a' tag inside the mini-boxS element */
+    display: block; /* Make the link occupy the entire space of the mini-box */
+    text-align: center; /* Center the text horizontally */
+    text-decoration: none; /* Remove the default underline */
+    color: #000; /* Set the text color */
+    font-size: 16px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold */
+    padding: 10px; /* Add some padding around the text */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #279d91; /* Set a background color */
+}
+.mini-boxS a:hover { /* Style the link on hover */
+    background-color: #cbbdbd; /* Change background color on hover */
+    color: #333; /* Change text color on hover */
+}
+
 
 .mini-box img {
     max-width: 100%;
