@@ -51,14 +51,14 @@ function createMiniBox(title, url) {
   document.body.appendChild(miniBox);
 }
 
-if (window.location.pathname === "/hub.html") {
+if (window.location.pathname === "/csfrq.html") {
   // Execute getFolderLinks() only on hub.html
   getFolderLinks();
 }
 
 //Code to make the button move left and right
 // Wrap the code in a DOMContentLoaded event listener
-if (window.location.pathname === "/index.html") {
+if (window.location.pathname === "/hub.html") {
   document.addEventListener("DOMContentLoaded", function () {
     const button = document.querySelector("button");
     let buttonLeft = 0;

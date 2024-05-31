@@ -1,0 +1,40 @@
+h1 {
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0 auto;
+    color: #0bb9d0;
+    /* Changed the color to "ocean" */
+    margin-bottom: 10px;
+    /* Add some spacing below the heading */
+}
+
+.mini-box {
+    width: 250px;
+    /* Set mini-box width */
+    border: 1px solid #ccc;
+    /* Add subtle border */
+    margin-bottom: 20px;
+    /* Provide spacing between boxes */
+    background-color: #c0c0c0;
+    /*Silver white background */
+    background-image: linear-gradient(to bottom, #f0f0f0, #c0c0c0);
+    /* Added gradient */
+}
+
+.mini-box a {
+    display: block;
+    /* Make the link take up the full width of its container */
+    margin-top: 10px;
+    /* Add some spacing between the title and the link */
+    text-decoration: none;
+    /* Remove the default underline from the link */
+    color: #0bb9d0;
+    /* Set the link color to match the title color */
+}
+
+.mini-box img {
+    max-width: 100%;
+    height: auto;
+}
