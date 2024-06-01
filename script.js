@@ -18,7 +18,6 @@ fetch('https://raw.githubusercontent.com/link-05/APCSA_MP3/main/README.md')
   });
 Figure out later does not work.*/
 
-
 //Pulls link of each file folder in the repo folder. The url will be taken and placed into a mini box.
 function getFolderLinks() {
   const url = "https://github.com/link-05/APCSA_MP3/tree/main/frq-solutions";
@@ -60,23 +59,23 @@ if (window.location.pathname === "/csfrq.html") {
 //Code to make the button move left and right
 // Wrap the code in a DOMContentLoaded event listener
 // if (window.location.pathname === "/index.html") {
-  document.addEventListener("DOMContentLoaded", function () {
-    const button = document.getElementById("button");
-    let buttonLeft = 0;
-    let buttonDirection = 1; // 1 for right, -1 for left
-    function moveButton() {
-      buttonLeft += buttonDirection;
-      button.style.left = buttonLeft + "px";
-      if (
-        buttonLeft >= window.innerWidth - button.offsetWidth ||
-        buttonLeft <= 0
-      ) {
-        buttonDirection *= -1;
-      }
-      requestAnimationFrame(moveButton);
+document.addEventListener("DOMContentLoaded", function () {
+  const button = document.getElementById("button");
+  let buttonLeft = 0;
+  let buttonDirection = 1; // 1 for right, -1 for left
+  function moveButton() {
+    buttonLeft += buttonDirection;
+    button.style.left = buttonLeft + "px";
+    if (
+      buttonLeft >= window.innerWidth - button.offsetWidth ||
+      buttonLeft <= 0
+    ) {
+      buttonDirection *= -1;
     }
-    moveButton();
-  });
+    requestAnimationFrame(moveButton);
+  }
+  moveButton();
+});
 // }
 
 //end of the mini window that hold the links to the different folders

@@ -10,7 +10,7 @@ h1 {
     /* Add some spacing below the heading */
 }
 
-.mini-boxS { 
+.mini-boxS {
     display: inline-block;
     margin: 10px;
     padding: 10px;
@@ -18,34 +18,49 @@ h1 {
     border-radius: 5px;
     text-align: center;
     width: 200px;
-    float: right; /* This makes the mini-boxes float to the right */
+    float: right;
+    /* This makes the mini-boxes float to the right */
 }
 
 .mini-box {
-  display: block;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  text-align: center;
-  width: 200px;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
     float: left;
 }
 
-.mini-boxS a { /* Target the 'a' tag inside the mini-boxS element */
-    display: block; /* Make the link occupy the entire space of the mini-box */
-    text-align: center; /* Center the text horizontally */
-    text-decoration: none; /* Remove the default underline */
-    color: #000; /* Set the text color */
-    font-size: 16px; /* Adjust the font size as needed */
-    font-weight: bold; /* Make the text bold */
-    padding: 10px; /* Add some padding around the text */
-    border-radius: 5px; /* Add rounded corners */
-    background-color: #279d91; /* Set a background color */
+.mini-boxS a {
+    /* Target the 'a' tag inside the mini-boxS element */
+    display: block;
+    /* Make the link occupy the entire space of the mini-box */
+    text-align: center;
+    /* Center the text horizontally */
+    text-decoration: none;
+    /* Remove the default underline */
+    color: #000;
+    /* Set the text color */
+    font-size: 16px;
+    /* Adjust the font size as needed */
+    font-weight: bold;
+    /* Make the text bold */
+    padding: 10px;
+    /* Add some padding around the text */
+    border-radius: 5px;
+    /* Add rounded corners */
+    background-color: #279d91;
+    /* Set a background color */
 }
-.mini-boxS a:hover { /* Style the link on hover */
-    background-color: #1c72ce; /* Change background color on hover */
-    color: #f2e8e8; /* Change text color on hover */
+
+.mini-boxS a:hover {
+    /* Style the link on hover */
+    background-color: #1c72ce;
+    /* Change background color on hover */
+    color: #f2e8e8;
+    /* Change text color on hover */
 }
 
 
