@@ -37,8 +37,10 @@ button {
     bottom: 1 px;
     /* Adjust for desired floating distance */
 }
+
 #button2 {
-    background-color: #0875c9; /* Replace with your desired color */
+    background-color: #0875c9;
+    /* Replace with your desired color */
 }
 
 button:hover {
