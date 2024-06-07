@@ -1,23 +1,3 @@
-/*const readmeContent = document.getElementById('readme-content');
-fetch('https://raw.githubusercontent.com/link-05/APCSA_MP3/main/README.md')
-  .then(response => response.text())
-  .then(markdown => {
-    // Create an iframe element and set its src attribute to the Markdown content
-    const iframe = document.createElement('iframe');
-    iframe.srcdoc = markdown;
-    iframe.width = '100%';
-    iframe.height = '600'; // Adjust the height as needed
-    iframe.style.border = '0'; // Remove default iframe border
-    // Replace the existing div content with the iframe
-    readmeContent.innerHTML = '';
-    readmeContent.appendChild(iframe);
-  })
-  .catch(error => {
-    console.error('Error fetching README:', error);
-    readmeContent.textContent = 'Error loading README';
-  });
-Figure out later does not work.*/
-
 //Pulls link of each file folder in the repo folder. The url will be taken and placed into a mini box.
 function getFolderLinks() {
   const url = "https://github.com/link-05/APCSA_MP3/tree/main/frq-solutions";
