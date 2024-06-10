@@ -1,3 +1,4 @@
+/* Control heading 1 fonts */
 h1 {
     text-align: center;
     text-decoration: none;
@@ -10,6 +11,7 @@ h1 {
     /* Add some spacing below the heading */
 }
 
+/*Padding and style for mini boxes  */
 .mini-boxS {
     display: inline-block;
     margin: 10px;
@@ -63,12 +65,13 @@ h1 {
     /* Change text color on hover */
 }
 
-
+/*Image scaling code  */
 .mini-box img {
     max-width: 100%;
     height: auto;
 }
 
+/*Sets the color of the button  */
 button {
     background-color: #1ca6d4;
     /* Green */
@@ -92,6 +95,7 @@ button {
     /* Adjust for desired floating distance */
 }
 
+/*Causes the button to hover  */
 button:hover {
     box-shadow: 0px 0px 20px rgb(11, 71, 249, 0.8);
     /* Increase glow on hover */

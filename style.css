@@ -3,6 +3,7 @@ html {
     width: 100%;
 }
 
+/*All text in h1 will be centered  */
 h1 {
     text-align: center;
     text-decoration: none;
@@ -15,6 +16,7 @@ h1 {
     /* Add some spacing below the heading */
 }
 
+/*Buttons will be in color green with white text  */
 button {
     background-color: #4caf50;
     /* Green */
@@ -38,6 +40,7 @@ button {
     /* Adjust for desired floating distance */
 }
 
+/*Button with button id button2 will be in blue*/
 #button2 {
     background-color: #0875c9;
     /* Replace with your desired color */
@@ -48,6 +51,7 @@ button:hover {
     /* Increase glow on hover */
 }
 
+/*Code for button to glow when action happens */
 .glow-link {
     /* Existing styles */
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
@@ -56,6 +60,7 @@ button:hover {
     /* Add a transition for smooth effect */
 }
 
+/*Button will glow when hover over  */
 .glow-link:hover {
     /* Existing styles */
     box-shadow: 0 0 10px 5px rgb(31, 31, 31, 0.5);

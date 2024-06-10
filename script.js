@@ -15,11 +15,12 @@ function getFolderLinks() {
     .catch((error) => console.error("Error fetching folders", error));
 }
 
-//Function that will take the link, name of folder
+//End of Function that will take the link, name of folder
+
+//Function to make mini boxes that have embed text with links
 function createMiniBoxS(title, url) {
   const miniBoxS = document.createElement("article");
   miniBoxS.className = "mini-boxS";
-
   const link = document.createElement("a");
 
   link.href = url;
