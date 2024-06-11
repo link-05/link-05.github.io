@@ -1,0 +1,79 @@
+/* stylePort.css */
+#image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-bottom: 40px;
+  /* Add spacing between images */
+}
+
+.circular-border {
+  width: 300px;
+  /* Adjust as needed */
+  height: 300px;
+  /* Adjust as needed */
+  border-radius: 50%;
+  /* Creates a circle */
+  border: 10px solid #ccc;
+  /* Add a border to the circle */
+  overflow: hidden;
+  /* Hide the image overflow */
+  position: relative;
+  /* Needed for positioning the image */
+}
+
+.circular-border img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ensures the image covers the circle */
+  position: absolute;
+  /* Position the image inside the circle */
+  top: 0;
+  left: 0;
+}
+
+.animated-image {
+  opacity: 0;
+  /* Initially hidden */
+  transform: translateY(30px);
+  /* Start slightly off screen */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  /* Define transition */
+}
+
+.animated-image.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Add more animations if needed */
+.animated-image.fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#back-to-hub {
+  background-color: blue;
+  /* Set the button color to blue */
+  color: black;
+  /* Set the text color to white for contrast */
+  padding: 10px 20px;
+  /* Add some padding to the button */
+  border: none;
+  /* Remove default border */
+  border-radius: 5px;
+  /* Add rounded corners */
+  cursor: pointer;
+  /* Change the cursor to a pointer on hover */
+}
