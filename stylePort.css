@@ -23,6 +23,13 @@
   /* Needed for positioning the image */
 }
 
+.image-text {
+  text-align: center;
+  margin-top: 20px; /* Add spacing above the text */
+  font-size: 1.2em; /* Make the text slightly larger */
+  color: #555; /* Set the text color */
+}
+
 .circular-border img {
   width: 100%;
   height: 100%;
