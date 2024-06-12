@@ -1,65 +1,63 @@
 /* stylePort.css */
+#about-me {
+  text-align: center;
+  margin-top: 50px; /* Add some spacing above the box */
+  padding: 20px; /* Add padding inside the box */
+  background-color: #f0f0f0; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  margin-bottom: 40px; /* Add spacing below the box */
+}
+
+#awards-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.award-box {
+  background-color: #73d6f2; /* Light blue background */
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 #image-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
   margin-bottom: 40px;
-  /* Add spacing between images */
 }
 
 .circular-border {
   width: 300px;
-  /* Adjust as needed */
   height: 300px;
-  /* Adjust as needed */
   border-radius: 50%;
-  /* Creates a circle */
-  border: 10px solid #00b3ff;
-  /* Add a border to the circle */
+  border: 10px solid #ccc;
   overflow: hidden;
-  /* Hide the image overflow */
   position: relative;
-  /* Needed for positioning the image */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* Add a subtle shadow */
   transition: box-shadow 0.3s ease;
-  /* Add a transition for the shadow */
 }
 
 .circular-border:hover {
-  box-shadow: 0 0 20px rgb(26, 31, 27, 0.6);
-  /* Increase the shadow on hover */
-}
-
-.image-text {
-  text-align: center;
-  margin-top: 20px;
-  /* Add spacing above the text */
-  font-size: 1.2em;
-  /* Make the text slightly larger */
-  color: #81d8ee;
-  /* Set the text color */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .circular-border img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Ensures the image covers the circle */
   position: absolute;
-  /* Position the image inside the circle */
   top: 0;
   left: 0;
 }
 
 .animated-image {
   opacity: 0;
-  /* Initially hidden */
   transform: translateY(30px);
-  /* Start slightly off screen */
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-  /* Define transition */
 }
 
 .animated-image.show {
@@ -67,32 +65,23 @@
   transform: translateY(0);
 }
 
-/* Add more animations if needed */
-.animated-image.fadeIn {
-  animation: fadeIn 1s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+.image-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #555;
 }
 
 #back-to-hub {
   background-color: blue;
-  /* Set the button color to blue */
-  color: black;
-  /* Set the text color to white for contrast */
+  color: white;
   padding: 10px 20px;
-  /* Add some padding to the button */
   border: none;
-  /* Remove default border */
   border-radius: 5px;
-  /* Add rounded corners */
   cursor: pointer;
-  /* Change the cursor to a pointer on hover */
+}
+
+.circular-border:first-child img {
+    max-width: 100%; /* Set the maximum width to 70% of the container */
+    max-height: 100%; /* Set the maximum height to 70% of the container */
 }

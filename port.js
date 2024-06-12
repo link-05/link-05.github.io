@@ -12,5 +12,5 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(showImage, 1000);
 
   // Show the next image after a delay
-  setInterval(showImage, 3000); // Change the delay as needed (3 seconds in this example)
+  setInterval(showImage, 2000); // Change the delay as needed (3 seconds in this example)
 });
