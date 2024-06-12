@@ -1,38 +1,47 @@
 /* stylePort.css */
 #about-me {
   text-align: center;
-  margin-top: 50px; /* Add some spacing above the box */
-  padding: 20px; /* Add padding inside the box */
-  background-color: #f0f0f0; /* Light gray background */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  margin-bottom: 40px; /* Add spacing below the box */
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
 }
 
 #awards-section {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
+
 .award-box {
-  background-color: #73d6f2; /* Light blue background */
-  padding: 5px;
+  background-color: #e0f2f7; 
+  padding: 15px;
   margin: 10px 0;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#image-container {
+#
+
+#image-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  height: 100vh;
+  flex-direction: row; /* Arrange images in a row */
+  gap: 40px; /* Add spacing between images*/
   margin-bottom: 40px;
 }
 
+.image-container {
+  display: flex;
+  flex-direction: row; /* Align circle and text vertically */
+  align-items: center; 
+}
+
 .circular-border {
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   border: 10px solid #ccc;
   overflow: hidden;
@@ -66,22 +75,23 @@
 }
 
 .image-text {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 1.2em;
+  text-align: flex;
+  margin-left: 20px;
+  font-size: 0.8em;
   color: #555;
+  opacity:0;;
+}
+.circular-border:hover{
+  .image-text{
+  opacity: 100;
+  }
 }
 
 #back-to-hub {
   background-color: blue;
   color: white;
-  padding: 10px 20px;
+  padding: 20px 40px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.circular-border:first-child img {
-    max-width: 100%; /* Set the maximum width to 70% of the container */
-    max-height: 100%; /* Set the maximum height to 70% of the container */
 }
