@@ -14,29 +14,38 @@
   margin-bottom: 40px;
 }
 
+.award-box:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+#image-section:hover .image-text {
+   display: block; /*This will display the image-text upon hovering over the section */
+}
+
 .award-box {
-  background-color: #e0f2f7; 
+  background-color: #e0f2f7;
   padding: 15px;
   margin: 10px 0;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#
-
 #image-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row; /* Arrange images in a row */
-  gap: 40px; /* Add spacing between images*/
+  flex-direction: row;
+  /* Arrange images in a row */
+  gap: 40px;
+  /* Add spacing between images*/
   margin-bottom: 40px;
 }
 
 .image-container {
   display: flex;
-  flex-direction: row; /* Align circle and text vertically */
-  align-items: center; 
+  flex-direction: row;
+  /* Align circle and text vertically */
+  align-items: center;
 }
 
 .circular-border {
@@ -79,12 +88,27 @@
   margin-left: 20px;
   font-size: 0.8em;
   color: #555;
-  opacity:0;;
+  display: none;
 }
-.circular-border:hover{
-  .image-text{
-  opacity: 100;
+
+.circular-border:hover {
+  .image-text {
+    opacity: 100;
   }
+}
+
+.resume-box {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    width: 200px;
+}
+
+a {
+  text-decoration:none;
 }
 
 #back-to-hub {
