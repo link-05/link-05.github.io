@@ -78,6 +78,37 @@
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
+    /* This is a mistake - meant to have text glow but very interesting outcome, the screen background glows, chatgpt generated code.
+    /* h2::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fbff00;
+        opacity: 0;
+        border-radius: 5px;
+        z-index: -1;
+        animation: glow 4s infinite alternate;
+        transition: opacity 0.3s;
+    }
+
+    h2:hover::after {
+        opacity: 1;
+    }
+
+    @keyframes glow {
+        from {
+            opacity: 0;
+            box-shadow: 0 0 10px 0px #ff0;
+        }
+        to {
+            opacity: 0.5;
+            box-shadow: 0 0 20px 5px #ff0;
+        }
+    } */
+
 .animated-image.show {
   opacity: 1;
   transform: translateY(0);
