@@ -14,7 +14,10 @@ h1 {
     /* Changed the color to "ocean" */
     margin-bottom: 10px;
     /* Add some spacing below the heading */
+    display: center; /* Ensures the transform applies correctly */
+    font-size: 30px;
 }
+
 
 /*Buttons will be in color green with white text  */
 button {
@@ -40,6 +43,33 @@ button {
     /* Adjust for desired floating distance */
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    gap: 0px; /* Space between buttons */
+  }
+  
+  .button3 {
+    background-color: #4585af;
+    /* blue */
+    border: ridge;
+    color: white;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 0px;
+    transition: padding 1.2s ease;
+  }
+    
+  .button3:hover {
+    padding: 15px 800px;
+  }
+
 /*Button with button id button2 will be in blue*/
 #button2 {
     background-color: #0875c9;
@@ -58,6 +88,7 @@ button:hover {
     /* Initial shadow */
     transition: box-shadow 0.3s ease;
     /* Add a transition for smooth effect */
+    transition: padding 1.2s ease;
 }
 
 /*Button will glow when hover over  */
@@ -65,4 +96,9 @@ button:hover {
     /* Existing styles */
     box-shadow: 0 0 10px 5px rgb(31, 31, 31, 0.5);
     /* Glow effect on hover */
+    transition: box-shadow 0.3s ease;
+    /* Add a transition for smooth effect */
+    padding: 15px 500px;
+    background-color: #d0e1ee;
+
 }
